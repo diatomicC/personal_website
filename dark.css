@@ -1,0 +1,455 @@
+/********************************* 
+Name:Juhee Hur
+Student ID:1155174175 
+**********************************/
+
+*{
+	margin:0; padding:0;
+	box-sizing: border-box;
+	text-transform:capitalize;
+	font-family:verdana;
+	border:none;
+	outline:none;
+	letter-spacing: 2px;
+}
+
+body {
+	font-family: 'Economica', sans-serif;
+}
+.container {
+	position: relative;
+	width: 100%;
+
+  }
+.image {
+	display: block;
+	width: 100%;
+	height: auto;
+  }
+
+#befhover
+{
+	padding: 25px;
+	background:url(picture/header.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	height:100%;
+	width:80%;
+	-webkit-filter: grayscale(100%); 
+	filter: grayscale(100%);	
+	
+}
+#befhover:hover
+{
+	-webkit-filter: grayscale(0%); 
+	filter: grayscale(0%);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 80%;
+	transition: .8s;
+	opacity: 1;
+}
+
+header {
+	padding: 3em;
+	background-size: cover;
+	background-position: center;
+
+}
+
+  
+.headertext{
+	font-weight: normal;
+	font-weight: bold;
+	color: white;
+	
+}
+h1{
+	font-size: 60px;
+
+}
+h4{
+	font-size: 20px;
+}
+
+
+section {
+	margin: 5em;
+	padding: 2em;
+	border-radius: 10px;
+}
+
+section h2 {
+    font-variant: small-caps;
+
+}
+
+.navbar{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #140113;
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+ 
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+
+.navbar li a:hover {
+  background-color: #301934;
+}
+
+#navigation{
+    color:white;
+}
+.btn-group button {
+
+	color: white; 
+	padding: 10px 24px; 
+	cursor: pointer; 
+	float: left; 
+  }
+
+  .btn-group {
+	margin:auto;
+	display: block;
+
+  }
+
+
+.burger{
+	display: none;
+	cursor: pointer;
+
+}
+
+.burger div{
+	width: 25px;
+	margin: 5px;
+	height: 3px;
+	background-color: #fdf8ff;
+
+}
+#special{
+
+	display:none;
+	width:60%;
+	
+}
+
+
+#about {
+	background: #201733;
+    color: white;
+}
+
+#slideshow{
+	display: none;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+#bigscreen{
+	display: block;
+}
+
+.flex-container {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex-container > div {
+	width: 8em;
+	height: 6em;
+	background: #40104d;
+	margin: 1em;
+	text-align: center;
+	line-height: 5em;
+	color: white;
+}
+
+#courses {
+	background: #31092c;
+}
+
+#courses table {
+	border-collapse: collapse;
+	width: 80%;
+	text-align: center;
+	margin: 2em;
+}
+
+#courses th, td {
+	padding: 1em;
+	border-bottom: 1px solid #ccc;
+}
+
+#courses tr:hover {
+	background: #281352;
+}
+
+#links {
+	background:  #2c0d41
+}
+
+#links a:link {
+	text-decoration: none;
+}
+
+#links a:hover {
+	font-style: italic;
+}
+
+#rwd {
+	background: #4b122c;
+}
+
+footer {
+	background: #520c31;
+	text-align: right;
+	padding: 5px;
+	font-size: smaller;
+}
+
+
+section {
+	margin: 0;
+	padding: 1em;
+	border-radius: 0;
+}	
+
+#about .flex-container div {
+	margin: 5px;
+}
+
+#courses table {
+	width: 100%;
+	margin: 0;
+}
+
+#response li{
+	color: rgb(253, 235, 255);
+}
+#response p{
+    color:rgb(248, 233, 252);
+}
+
+#courses table{
+    color:white;
+}
+
+
+@media screen and (max-width:800px){
+	
+	*{
+		text-align: center;
+	}
+	#header{
+		font-size: 30px;
+	}
+	#special button{
+		font-size: 1px;
+	}
+	#special{
+		width: 80%;
+	}
+	body{
+		overflow-x: hidden;
+	}
+	#navigation{
+		display: none;
+        color:white;
+	}
+	nav ul li{
+
+		width:100%;
+		height: 10vh;
+		background:#1d0222;
+		top:80px;
+		left:0;
+		text-align:center;
+		
+
+	}
+	nav ul li{
+		display: block;
+	}
+	
+	.burger{
+		display: block;
+	}
+	#slideshow{
+		display: block;
+		align-items: center;
+	}
+	#bigscreen{
+		display: none;
+	}
+	
+
+
+}
+
+
+
+
+.nav-active{
+	transform: translateX(0%);
+}
+
+
+
+/*Progress bar*/
+
+  #progressbar
+{
+	width: 100%;
+	height: 8px;
+	background: rgb(15, 2, 26);
+	display: none;
+	
+}
+  .progress-bar {
+	height: 8px;
+	background: #d3bcf5;
+	width: 0%;
+  }
+
+  .sticky {
+	position: sticky;
+	top: 0;
+	background: #8a4baf;
+  }
+
+  footer{
+      color: white;
+  }
+
+ /*comment*/
+ *{
+	box-sizing: border-box;
+	text-transform:capitalize;
+	font-family:verdana;
+	border:none;
+	outline:none;
+
+}
+#comments{
+    color: rgb(252, 228, 245);
+    font-size: 10%;
+}
+.choosecolor
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+    color: white;
+}
+body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: #1e1224;
+}
+.container{
+	width:500px;
+	text-align: right;
+
+}
+.box-container{
+	height: 200px;
+	width: 100%;
+	background: #2f0e50;
+	box-shadow: 0 5px 15px #10021d;
+	border-radius: 5px;
+	padding:15px;
+
+	display: none;
+}
+#new-comment, #new-email{
+
+	color:black;
+
+}
+
+.box-container .box{
+	height: 80%;
+	width: 100%;
+	border-radius: 5px;
+	padding: 10px;
+	background: #f8f8f8;
+	overflow-y: auto;
+	text-align: left;
+}
+#emailinput{
+	width: 100%;
+	height: 40px;
+	background: none;
+	font-size: 15px;
+	border-bottom: 1px solid #fff;
+}
+
+#emailinput:focus{
+	border-bottom: 2px solid #fff;
+}
+.form-label{
+	width: 100%;
+	height: 40px;
+	background: none;
+	font-size: 15px;
+	border-bottom: 1px solid #fff;
+	color:white;
+}
+.form-label:focus{
+	border-bottom: 2px solid #fff;
+}
+
+button{
+	height: 30px;
+	width: 160px;
+	color:#301934;
+	background: #09010a;
+	color: #fff;
+	cursor: pointer;
+	margin: 10px 0;
+	font-size: 15px;
+	box-shadow: 0 3px 10px #111;
+	border-radius: 5px;
+
+}
+button:hover{
+	opacity: .9;
+
+}
+h2{
+	color:#fff;
+
+}
+::placeholder{
+	color:rgb(245, 224, 250);
+}

@@ -1,0 +1,237 @@
+<!--Name:Juhee Hur
+Student ID:1155174175 -->
+
+<!DOCTYPE html>
+<html lang="en"><head>
+
+	<link rel="shortcut icon" href="picture/1.jpg">
+    <title>
+        Emily's Website
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384- 1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+	<link rel="stylesheet" href="dark.css" media="(prefers-color-scheme: dark)" />
+	<link rel="stylesheet" href="style.css" media="(prefers-color-scheme: light)"/>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Mochiy+Pop+P+One&display=swap" rel="stylesheet">
+	<script src="action.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</head>
+<body onload="loadfile()">
+	
+
+<article>
+	
+<header class="container" id="befhover"  >
+	<div class="headertext">
+		<h1>I'm <span>Juhee Hur</span></h1>
+		<h4>Broad-based engineering year 1 student</h4>
+	</div>
+
+
+</header>
+
+<nav class="navbar" >
+	<ul id="navigation">
+		<li><a href="#about">About</a></li>
+		<li><a href="#courses">Courses</a></li>
+		<li><a href="#links">Links</a></li>
+		<li><a onclick="special()">Special!</a></li>
+		<li><a href="#links">Comment</a></li>
+	</ul>
+
+	
+	<div class="burger" onclick="menuclick()">
+		<div class="line1"></div>
+		<div class="line2"></div>
+		<div class="line3"></div>
+	</div>
+
+	<div class="btn-group" id="special">
+		<button onclick="align()" style="width:33.3%">Align</button>
+		<button onclick="newhobby()" style="width:33.3%">New Hobby</button>
+		<button onclick="scrollhide()" style="width:33.3%">Scroll</button>
+	</div>
+
+</nav>
+
+
+
+
+<div class="sticky">
+<div class="progress-container" id="progressbar">
+    <div class="progress-bar" id="myBar"></div>
+</div>
+</div>
+
+
+
+<section id="about">
+	<h2 id="header">All About Me</h2>
+	<p>
+	<picture>
+		<div class="crop">
+			<div id="bigscreen">
+				<img style="width: 250px; height: 250px; object-fit: cover;" src="picture/Juheehur.jpg">
+				<img style="width: 250px; height: 250px; object-fit: cover;" src="picture/hk.jpg">
+				<img style="width: 250px; height: 250px; object-fit: cover;" src="picture/hongkong.jpg">
+				<img style="width: 250px; height: 250px; object-fit: cover;" src="picture/world.jpg">
+			</div>
+			
+			<div class="w3-content w3-display-container" id="slideshow" >
+				<img class="mySlides" style="width: 250px; height: 250px; object-fit: cover;" src="picture/Juheehur.jpg" >
+				<img class="mySlides" style="width: 250px; height: 250px; object-fit: cover;"src="picture/hk.jpg" >
+				<img class="mySlides" style="width: 250px; height: 250px; object-fit: cover;"src="picture/hongkong.jpg" >
+				<img class="mySlides" style="width: 250px; height: 250px; object-fit: cover;"src="picture/world.jpg">
+			  
+				<button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+				<button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+			</div>
+		
+		</div>
+	</picture>
+	Hi I am Juhee Hur Student from Broad-based engineering at CUHK. I love studying languages (both real and programming) and aiming for computer science! 
+	</p>
+
+
+	<h3 id="header">My hobbies</h3>
+	<div id="hobbies" class="flex-container">
+		<div>Chess</div>
+		<div>Sudoku</div>
+		<div>Game</div>
+
+	</div>
+</section>
+
+<section id="courses">
+	<h2 id="header">My Courses</h2>
+	<table>
+		<tbody><tr>
+			<th>Course code</th>
+			<th>Contents</th>
+			<th>Credits</th>
+		</tr>
+		<tr>
+			<td>PHED1180</td>
+			<td>Badminton</td>
+			<td>1</td>
+
+		</tr>
+		<tr>
+			<td>ESTR2160</td>
+			<td>Building Web Applications</td>
+			<td>3</td>
+		</tr>
+ 		<tr>
+			<td>CLCP1133</td>
+			<td>Communication in Context I</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>CSCI1030</td>
+			<td>Hands-ono Introduction to JAVA</td>
+			<td>1</td>
+		</tr>
+		<tr>
+			<td>ENGG1120</td>
+			<td>Linear Algebra for Engineers</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>ENGG1130</td>
+			<td>Multivariable Calculus for Engineers</td>
+			<td>3</td>
+		</tr>
+		<tr>
+			<td>SPAN1000</td>
+			<td>Spanish I</td>
+			<td>3</td>
+		</tr>
+	</tbody></table>
+</section>
+
+<section id="links">
+	<h2 id="header">Interesting Links</h2>
+	<ul>
+		<li><a href="https://www.instagram.com/diatomic_carbon/" target="_blank">My instagram</a></li>
+		<li><a href="https://diatomicc.tistory.com/" target="_blank">Programming learning website</a></li>
+		<li><a href="https://comic.naver.com/artistTitle?artistId=319591" target="_blank">My comics</a></li>
+		<li><a href="https://ogqmarket.naver.com/creators/%ED%83%84%EC%86%8C" target="_blank">My sticker market</a></li>
+	</ul>
+</section>
+
+<section id="response">
+	<h2 id="header">Response Web Design</h2>
+	<ul>
+		<p>These are the following changes when you look with your mobile screens</p>
+		<li>Different form of navigation bar (horizontal for laptop and vertical for mobile)</li>
+		<li>Adjusted length of special button bar</li>
+		<li>mobile screen shows slideshow of pictures</li>
+		<li>mobile screen shows all text aligned in the center</li>
+		
+	</ul>
+
+</section>
+
+<!--choose colour-->
+<section id="comment">
+<div class="choosecolor">
+<h2 id="header">Choose your colour &nbsp</h2>
+<div class="form-check">
+  <input class="form-check-input" type="radio" name="new-color" id="new-color-red" value="red">
+  <label class="form-check-label" for="new-color-red">Red</label>
+</div>
+<div class="form-check">
+	<input class="form-check-input" type="radio" name="new-color" id="new-color-green" value="green">
+	<label class="form-check-label" for="new-color-green">Green</label>
+</div>
+<div class="form-check">
+	<input class="form-check-input" type="radio" name="new-color" id="new-color-yellow" value="yellow">
+	<label class="form-check-label" for="new-color-yellow">Yellow</label>
+  </div>
+  <div class="form-check">
+	<input class="form-check-input" type="radio" name="new-color" id="new-color-blue" value="blue">
+	<label class="form-check-label" for="new-color-blue">Blue</label>
+  </div>
+</div>
+
+
+
+<form name="commentform">
+<div class="container">
+	<div class="mb-3">
+		<label for="new-email" class="form-label">Email address</label>
+		<input type="email" class="form-control" id="new-email" placeholder="name@example.com">
+	  </div>
+	  <div class="mb-3">
+		<label for="new-comment" class="form-label" placeholder="write your comments here">Comment</label>
+		<textarea class="form-control" id="new-comment" rows="3"></textarea>
+	  </div>
+	  <button type="button"  onclick="processform()">Add comment</button>
+
+
+	<div id="comments"class="box"> 
+		<div id="c1001" class="d-flex">
+			
+		</div>
+	</div>
+		
+
+</div>
+</form>
+
+</section>
+
+<footer>
+This website was updated on <time>2022-02-27</time>. <b>© Juhee Hur</b>
+</footer>
+</article>
+
+
+
+</body></html>
